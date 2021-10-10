@@ -8,7 +8,6 @@ const {
 } = require("@adiwajshing/baileys");
 const simple = require("./lib/simple.js");
 const WAConnection = simple.WAConnection(_WAConnection);
-const figlet = require('figlet')
 const fs = require("fs");
 const { version, bugs } = require('./package.json')
 const { banner, start, success, getGroupAdmins } = require("./lib/functions");
