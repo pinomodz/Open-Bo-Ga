@@ -1,1 +1,1 @@
-worker: npm install && npm i @adiwajshing/Baileys lates && npm start
+worker: npm install && npm start
