@@ -9,6 +9,7 @@ const {
 const simple = require("./lib/simple.js");
 const WAConnection = simple.WAConnection(_WAConnection);
 const fs = require("fs");
+const figlet = require("figlet");
 const { version, bugs } = require('./package.json')
 const { banner, start, success, getGroupAdmins } = require("./lib/functions");
 const fetch = require("node-fetch");
