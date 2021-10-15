@@ -64,7 +64,7 @@ const sleep = async (ms) => {
 const starts = async (client = new WAConnection()) => {
   client.logger.level = "warn";
   client.version = [2, 2123, 8];
-  client.browserDescription = ["ZAM BOT", "Linux", "3.0"];
+  client.browserDescription = ["ZAM BOT", "Chrome", "3.0"];
   console.log(banner.string);
   client.on("qr", () => {
     console.log(
@@ -208,7 +208,7 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
                 teks = `🌹 *Hɪ* @${num.split('@')[0]}\n🌹 *Bɪᴏ* : *${thu.status}*\n🌹 *Mᴇᴍʙᴇʀs : ${memeg}*\n🌹 *Wᴇʟᴄᴏᴍᴇ Tᴏ* \n *${mdata.subject}*\n🌹 *Dᴏɴᴛ Fᴏʀɢᴇᴛ Dɪsᴄʀɪᴘᴛɪᴏɴ*\n ${time_wel} -  ${time_welc}`
                 welcomeBut = [{buttonId:`${prefix}getdeskgc`,buttonText:{displayText:'DISCRIPTION'},type:1}, {buttonId:`${prefix}sc`,buttonText:{displayText:'SC'},type:1}]
-                welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
+                welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 client.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
                  }
             if (anu.action == 'remove' && !mem.includes(client.user.jid)) {
@@ -446,4 +446,3 @@ function uncache(module = ".") {
 }
 
 starts();
-// 𝙅𝙖𝙣 𝙃𝙖𝙥𝙪𝙨 𝘾𝙧𝙚𝙙𝙞𝙩 𝙂𝙬 𝘼𝙨𝙪𝙪𝙪
